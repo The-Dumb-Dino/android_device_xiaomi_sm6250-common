@@ -146,6 +146,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.sdm
 
 $(call soong_config_set,livedisplay_sdm,enable_dm,false)
+$(call soong_config_set,livedisplay_sdm,enable_pa,false)
 
 # Media
 PRODUCT_COPY_FILES += \
