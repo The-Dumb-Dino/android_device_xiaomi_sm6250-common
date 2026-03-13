@@ -526,6 +526,4 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
 
-    <!-- Whether this device is supporting the camera toggle -->
-    <bool name="config_supportsCamToggle">true</bool>
 </resources>
