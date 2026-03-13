@@ -336,5 +336,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
+# Audio Hal support for drivers pre 15 QPR2
+$(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
+
 # Inherit proprietary targets
 $(call inherit-product, vendor/xiaomi/sm6250-common/sm6250-common-vendor.mk)
